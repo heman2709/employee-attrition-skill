@@ -1,0 +1,7 @@
+.env
+outputs/*.json
+outputs/*.csv
+outputs/*.html
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
