@@ -1,0 +1,448 @@
+{
+  "dataset_summary": {
+    "rows": 1470,
+    "cols_after_drop": 28,
+    "dropped_columns": [
+      "EmployeeCount",
+      "EmployeeNumber",
+      "Over18",
+      "StandardHours"
+    ]
+  },
+  "null_analysis": {
+    "null_counts": {
+      "Age": 0,
+      "BusinessTravel": 0,
+      "DailyRate": 0,
+      "Department": 0,
+      "DistanceFromHome": 0,
+      "Education": 0,
+      "EducationField": 0,
+      "EnvironmentSatisfaction": 0,
+      "Gender": 0,
+      "HourlyRate": 0,
+      "JobInvolvement": 0,
+      "JobLevel": 0,
+      "JobRole": 0,
+      "JobSatisfaction": 0,
+      "MaritalStatus": 0,
+      "MonthlyRate": 0,
+      "NumCompaniesWorked": 0,
+      "PercentSalaryHike": 0,
+      "PerformanceRating": 0,
+      "RelationshipSatisfaction": 0,
+      "StockOptionLevel": 0,
+      "TotalWorkingYears": 0,
+      "TrainingTimesLastYear": 0,
+      "WorkLifeBalance": 0,
+      "YearsAtCompany": 0,
+      "YearsInCurrentRole": 0,
+      "YearsSinceLastPromotion": 0,
+      "YearsWithCurrManager": 0
+    },
+    "null_pct": {
+      "Age": 0.0,
+      "BusinessTravel": 0.0,
+      "DailyRate": 0.0,
+      "Department": 0.0,
+      "DistanceFromHome": 0.0,
+      "Education": 0.0,
+      "EducationField": 0.0,
+      "EnvironmentSatisfaction": 0.0,
+      "Gender": 0.0,
+      "HourlyRate": 0.0,
+      "JobInvolvement": 0.0,
+      "JobLevel": 0.0,
+      "JobRole": 0.0,
+      "JobSatisfaction": 0.0,
+      "MaritalStatus": 0.0,
+      "MonthlyRate": 0.0,
+      "NumCompaniesWorked": 0.0,
+      "PercentSalaryHike": 0.0,
+      "PerformanceRating": 0.0,
+      "RelationshipSatisfaction": 0.0,
+      "StockOptionLevel": 0.0,
+      "TotalWorkingYears": 0.0,
+      "TrainingTimesLastYear": 0.0,
+      "WorkLifeBalance": 0.0,
+      "YearsAtCompany": 0.0,
+      "YearsInCurrentRole": 0.0,
+      "YearsSinceLastPromotion": 0.0,
+      "YearsWithCurrManager": 0.0
+    },
+    "columns_with_nulls": []
+  },
+  "target_analysis": {
+    "attrition_yes": 0,
+    "attrition_no": 0,
+    "imbalance_ratio": null
+  },
+  "numeric_profiles": {
+    "Age": {
+      "min": 18.0,
+      "max": 60.0,
+      "mean": 36.92381,
+      "median": 36.0,
+      "std": 9.135373,
+      "skewness": 0.413286,
+      "pct_25": 30.0,
+      "pct_75": 43.0,
+      "outlier_count": 0
+    },
+    "DailyRate": {
+      "min": 102.0,
+      "max": 1499.0,
+      "mean": 802.485714,
+      "median": 802.0,
+      "std": 403.5091,
+      "skewness": -0.003519,
+      "pct_25": 465.0,
+      "pct_75": 1157.0,
+      "outlier_count": 0
+    },
+    "DistanceFromHome": {
+      "min": 1.0,
+      "max": 29.0,
+      "mean": 9.192517,
+      "median": 7.0,
+      "std": 8.106864,
+      "skewness": 0.958118,
+      "pct_25": 2.0,
+      "pct_75": 14.0,
+      "outlier_count": 0
+    },
+    "Education": {
+      "min": 1.0,
+      "max": 5.0,
+      "mean": 2.912925,
+      "median": 3.0,
+      "std": 1.024165,
+      "skewness": -0.289681,
+      "pct_25": 2.0,
+      "pct_75": 4.0,
+      "outlier_count": 0
+    },
+    "EnvironmentSatisfaction": {
+      "min": 1.0,
+      "max": 4.0,
+      "mean": 2.721769,
+      "median": 3.0,
+      "std": 1.093082,
+      "skewness": -0.321654,
+      "pct_25": 2.0,
+      "pct_75": 4.0,
+      "outlier_count": 0
+    },
+    "HourlyRate": {
+      "min": 30.0,
+      "max": 100.0,
+      "mean": 65.891156,
+      "median": 66.0,
+      "std": 20.329428,
+      "skewness": -0.032311,
+      "pct_25": 48.0,
+      "pct_75": 83.75,
+      "outlier_count": 0
+    },
+    "JobInvolvement": {
+      "min": 1.0,
+      "max": 4.0,
+      "mean": 2.729932,
+      "median": 3.0,
+      "std": 0.711561,
+      "skewness": -0.498419,
+      "pct_25": 2.0,
+      "pct_75": 3.0,
+      "outlier_count": 0
+    },
+    "JobLevel": {
+      "min": 1.0,
+      "max": 5.0,
+      "mean": 2.063946,
+      "median": 2.0,
+      "std": 1.10694,
+      "skewness": 1.025401,
+      "pct_25": 1.0,
+      "pct_75": 3.0,
+      "outlier_count": 0
+    },
+    "JobSatisfaction": {
+      "min": 1.0,
+      "max": 4.0,
+      "mean": 2.728571,
+      "median": 3.0,
+      "std": 1.102846,
+      "skewness": -0.329672,
+      "pct_25": 2.0,
+      "pct_75": 4.0,
+      "outlier_count": 0
+    },
+    "MonthlyRate": {
+      "min": 2094.0,
+      "max": 26999.0,
+      "mean": 14313.103401,
+      "median": 14235.5,
+      "std": 7117.786044,
+      "skewness": 0.018578,
+      "pct_25": 8047.0,
+      "pct_75": 20461.5,
+      "outlier_count": 0
+    },
+    "NumCompaniesWorked": {
+      "min": 0.0,
+      "max": 9.0,
+      "mean": 2.693197,
+      "median": 2.0,
+      "std": 2.498009,
+      "skewness": 1.026471,
+      "pct_25": 1.0,
+      "pct_75": 4.0,
+      "outlier_count": 52
+    },
+    "PercentSalaryHike": {
+      "min": 11.0,
+      "max": 25.0,
+      "mean": 15.209524,
+      "median": 14.0,
+      "std": 3.659938,
+      "skewness": 0.821128,
+      "pct_25": 12.0,
+      "pct_75": 18.0,
+      "outlier_count": 0
+    },
+    "PerformanceRating": {
+      "min": 3.0,
+      "max": 4.0,
+      "mean": 3.153741,
+      "median": 3.0,
+      "std": 0.360824,
+      "skewness": 1.921883,
+      "pct_25": 3.0,
+      "pct_75": 3.0,
+      "outlier_count": 226
+    },
+    "RelationshipSatisfaction": {
+      "min": 1.0,
+      "max": 4.0,
+      "mean": 2.712245,
+      "median": 3.0,
+      "std": 1.081209,
+      "skewness": -0.302828,
+      "pct_25": 2.0,
+      "pct_75": 4.0,
+      "outlier_count": 0
+    },
+    "StockOptionLevel": {
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.793878,
+      "median": 1.0,
+      "std": 0.852077,
+      "skewness": 0.96898,
+      "pct_25": 0.0,
+      "pct_75": 1.0,
+      "outlier_count": 85
+    },
+    "TotalWorkingYears": {
+      "min": 0.0,
+      "max": 40.0,
+      "mean": 11.279592,
+      "median": 10.0,
+      "std": 7.780782,
+      "skewness": 1.117172,
+      "pct_25": 6.0,
+      "pct_75": 15.0,
+      "outlier_count": 63
+    },
+    "TrainingTimesLastYear": {
+      "min": 0.0,
+      "max": 6.0,
+      "mean": 2.79932,
+      "median": 3.0,
+      "std": 1.289271,
+      "skewness": 0.553124,
+      "pct_25": 2.0,
+      "pct_75": 3.0,
+      "outlier_count": 238
+    },
+    "WorkLifeBalance": {
+      "min": 1.0,
+      "max": 4.0,
+      "mean": 2.761224,
+      "median": 3.0,
+      "std": 0.706476,
+      "skewness": -0.55248,
+      "pct_25": 2.0,
+      "pct_75": 3.0,
+      "outlier_count": 0
+    },
+    "YearsAtCompany": {
+      "min": 0.0,
+      "max": 40.0,
+      "mean": 7.008163,
+      "median": 5.0,
+      "std": 6.126525,
+      "skewness": 1.764529,
+      "pct_25": 3.0,
+      "pct_75": 9.0,
+      "outlier_count": 104
+    },
+    "YearsInCurrentRole": {
+      "min": 0.0,
+      "max": 18.0,
+      "mean": 4.229252,
+      "median": 3.0,
+      "std": 3.623137,
+      "skewness": 0.917363,
+      "pct_25": 2.0,
+      "pct_75": 7.0,
+      "outlier_count": 21
+    },
+    "YearsSinceLastPromotion": {
+      "min": 0.0,
+      "max": 15.0,
+      "mean": 2.187755,
+      "median": 1.0,
+      "std": 3.22243,
+      "skewness": 1.98429,
+      "pct_25": 0.0,
+      "pct_75": 3.0,
+      "outlier_count": 107
+    },
+    "YearsWithCurrManager": {
+      "min": 0.0,
+      "max": 17.0,
+      "mean": 4.123129,
+      "median": 3.0,
+      "std": 3.568136,
+      "skewness": 0.833451,
+      "pct_25": 2.0,
+      "pct_75": 7.0,
+      "outlier_count": 14
+    }
+  },
+  "categorical_profiles": {
+    "BusinessTravel": {
+      "unique_count": 3,
+      "value_counts": {
+        "Travel_Rarely": 1043,
+        "Travel_Frequently": 277,
+        "Non-Travel": 150
+      },
+      "most_frequent": "Travel_Rarely",
+      "least_frequent": "Non-Travel"
+    },
+    "Department": {
+      "unique_count": 3,
+      "value_counts": {
+        "Research & Development": 961,
+        "Sales": 446,
+        "Human Resources": 63
+      },
+      "most_frequent": "Research & Development",
+      "least_frequent": "Human Resources"
+    },
+    "EducationField": {
+      "unique_count": 6,
+      "value_counts": {
+        "Life Sciences": 606,
+        "Medical": 464,
+        "Marketing": 159,
+        "Technical Degree": 132,
+        "Other": 82,
+        "Human Resources": 27
+      },
+      "most_frequent": "Life Sciences",
+      "least_frequent": "Human Resources"
+    },
+    "Gender": {
+      "unique_count": 2,
+      "value_counts": {
+        "Male": 882,
+        "Female": 588
+      },
+      "most_frequent": "Male",
+      "least_frequent": "Female"
+    },
+    "JobRole": {
+      "unique_count": 9,
+      "value_counts": {
+        "Sales Executive": 326,
+        "Research Scientist": 292,
+        "Laboratory Technician": 259,
+        "Manufacturing Director": 145,
+        "Healthcare Representative": 131,
+        "Manager": 102,
+        "Sales Representative": 83,
+        "Research Director": 80,
+        "Human Resources": 52
+      },
+      "most_frequent": "Sales Executive",
+      "least_frequent": "Human Resources"
+    },
+    "MaritalStatus": {
+      "unique_count": 3,
+      "value_counts": {
+        "Married": 673,
+        "Single": 470,
+        "Divorced": 327
+      },
+      "most_frequent": "Married",
+      "least_frequent": "Divorced"
+    }
+  },
+  "ordinal_validation": {
+    "Education": {
+      "min_found": 1.0,
+      "max_found": 5.0,
+      "valid": true
+    },
+    "EnvironmentSatisfaction": {
+      "min_found": 1.0,
+      "max_found": 4.0,
+      "valid": true
+    },
+    "JobInvolvement": {
+      "min_found": 1.0,
+      "max_found": 4.0,
+      "valid": true
+    },
+    "JobLevel": {
+      "min_found": 1.0,
+      "max_found": 5.0,
+      "valid": true
+    },
+    "JobSatisfaction": {
+      "min_found": 1.0,
+      "max_found": 4.0,
+      "valid": true
+    },
+    "PerformanceRating": {
+      "min_found": 3.0,
+      "max_found": 4.0,
+      "valid": true
+    },
+    "RelationshipSatisfaction": {
+      "min_found": 1.0,
+      "max_found": 4.0,
+      "valid": true
+    },
+    "StockOptionLevel": {
+      "min_found": 0.0,
+      "max_found": 3.0,
+      "valid": true
+    },
+    "WorkLifeBalance": {
+      "min_found": 1.0,
+      "max_found": 4.0,
+      "valid": true
+    }
+  },
+  "duplicate_rows": 0,
+  "warnings": [],
+  "errors": [
+    "Missing required columns after drop step -> target: ['Attrition']; categorical: ['OverTime']; numeric: ['MonthlyIncome']",
+    "Cannot analyze target: 'Attrition' column missing."
+  ],
+  "validation_passed": false
+}

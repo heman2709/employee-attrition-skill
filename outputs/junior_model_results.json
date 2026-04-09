@@ -1,0 +1,162 @@
+{
+  "model_comparison": {
+    "Logistic Regression": {
+      "roc_auc_mean": 0.8820550682838817,
+      "roc_auc_std": 0.026343635316168443,
+      "f1_mean": 0.656144997474243,
+      "f1_std": 0.07795835838480444,
+      "precision_mean": 0.7368565799525552,
+      "precision_std": 0.03724173953004993,
+      "recall_mean": 0.6,
+      "recall_std": 0.11409536133993328
+    },
+    "Random Forest": {
+      "roc_auc_mean": 0.8288887078081993,
+      "roc_auc_std": 0.027860562494936354,
+      "f1_mean": 0.48817108552128846,
+      "f1_std": 0.09366604316032542,
+      "precision_mean": 0.701813725490196,
+      "precision_std": 0.10188233454467072,
+      "recall_mean": 0.3846153846153846,
+      "recall_std": 0.11467015269229691
+    },
+    "Gradient Boosting": {
+      "roc_auc_mean": 0.8306202507473694,
+      "roc_auc_std": 0.017089319014085814,
+      "f1_mean": 0.5177765310892941,
+      "f1_std": 0.06544583709189239,
+      "precision_mean": 0.6151621808143547,
+      "precision_std": 0.05692419732094858,
+      "recall_mean": 0.4564102564102564,
+      "recall_std": 0.09830917698810673
+    }
+  },
+  "best_model": {
+    "name": "Logistic Regression",
+    "roc_auc_cv": 0.8820550682838817,
+    "final_roc_auc": 0.9120879120879121,
+    "final_f1": 0.7159090909090909,
+    "final_precision": 0.802547770700637,
+    "final_recall": 0.6461538461538462,
+    "confusion_matrix": [
+      [
+        851,
+        31
+      ],
+      [
+        69,
+        126
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.925,
+        "recall": 0.9648526077097506,
+        "f1-score": 0.9445061043285239,
+        "support": 882
+      },
+      "1": {
+        "precision": 0.802547770700637,
+        "recall": 0.6461538461538462,
+        "f1-score": 0.7159090909090909,
+        "support": 195
+      },
+      "accuracy": 0.9071494893221913,
+      "macro avg": {
+        "precision": 0.8637738853503185,
+        "recall": 0.8055032269317983,
+        "f1-score": 0.8302075976188075,
+        "support": 1077
+      },
+      "weighted avg": {
+        "precision": 0.9028289835530401,
+        "recall": 0.9071494893221913,
+        "f1-score": 0.9031166729294622,
+        "support": 1077
+      }
+    }
+  },
+  "shap_top_features": [
+    {
+      "feature": "EducationField_Life Sciences",
+      "shap_importance": 1.7693256874217649
+    },
+    {
+      "feature": "MaritalStatus_Married",
+      "shap_importance": 1.5916181560929779
+    },
+    {
+      "feature": "EducationField_Medical",
+      "shap_importance": 1.5588031140289682
+    },
+    {
+      "feature": "JobRole_Research Scientist",
+      "shap_importance": 1.524454577499878
+    },
+    {
+      "feature": "BusinessTravel_Travel_Rarely",
+      "shap_importance": 1.2119288262673815
+    },
+    {
+      "feature": "JobLevel",
+      "shap_importance": 1.104100524848952
+    },
+    {
+      "feature": "MaritalStatus_Divorced",
+      "shap_importance": 1.0777227139565557
+    },
+    {
+      "feature": "BusinessTravel_Non-Travel",
+      "shap_importance": 1.0316126399545464
+    },
+    {
+      "feature": "OverTime",
+      "shap_importance": 0.884619049494606
+    },
+    {
+      "feature": "JobRole_Laboratory Technician",
+      "shap_importance": 0.8194117867712312
+    },
+    {
+      "feature": "MaritalStatus_Single",
+      "shap_importance": 0.8135270688010763
+    },
+    {
+      "feature": "YearsAtCompany",
+      "shap_importance": 0.8038601685319791
+    },
+    {
+      "feature": "Department_Sales",
+      "shap_importance": 0.7144039025486337
+    },
+    {
+      "feature": "Department_Research & Development",
+      "shap_importance": 0.6913958272732725
+    },
+    {
+      "feature": "JobSatisfaction",
+      "shap_importance": 0.6496866285425942
+    }
+  ],
+  "risk_segments": {
+    "High Risk": {
+      "count": 124,
+      "percentage": 11.513463324048283
+    },
+    "Medium Risk": {
+      "count": 121,
+      "percentage": 11.234911792014856
+    },
+    "Low Risk": {
+      "count": 832,
+      "percentage": 77.25162488393687
+    }
+  },
+  "metadata": {
+    "random_seed": 42,
+    "n_features": 55,
+    "n_samples": 1077,
+    "cv_folds": 5,
+    "smote_applied": true
+  }
+}
